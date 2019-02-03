@@ -72,7 +72,7 @@ private int aux;
     public void setDenominador(int denominador) {
         this.denominador = denominador;
     }
-    
+    //Metodo para invertir la fraccion
     public void invertir(){
     
     aux=numerador;
@@ -81,6 +81,7 @@ private int aux;
     System.out.println("Su fraccion invertida es: "+numerador+"/" +denominador);
             
 }
+    //Metodo para multiplicar la fraccion por un numero
     public double Multiplicacion(){
     aux=num*numerador;
     numerador=aux;
@@ -89,11 +90,13 @@ private int aux;
     return resultado;
     
 }
+    //Metodo para dividir la fraccion
     public double DivisionFracion(){
         resultado= numerador/denominador;
         System.out.println("El resultado de dividir la fraccion "+numerador+"/"+denominador+" es: "+resultado);
         return resultado;
     }
+    //Metodo para dividir la fraccion entre un numero
     public double Division(){
         aux=num*denominador;
         denominador=aux;
@@ -101,6 +104,8 @@ private int aux;
         System.out.println("El resultado de dividir "+num+" entre "+numerador+"/"+denominador+" es: "+resultado);
         return resultado;
     }
+    
+    @Override
     public String toString(){
         String datos;
         

@@ -32,6 +32,7 @@ public class Fraccion {
                 + "\n 3.Dividir la fraccion"
                 + "\n 4.Dividir la fraccion entre un numero");
         caso=sc.nextInt();
+        //Switch para indicar que funcion debe realizar el programa
         switch(caso){
             case 1:
                 
